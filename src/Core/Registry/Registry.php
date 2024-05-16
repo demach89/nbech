@@ -117,7 +117,7 @@ abstract class Registry
         }
 
         $this->nbkiFileName = $nbkiProcessor->getFilename();
-        $this->nbkiPath = NBKI_FILES_DIR . "\\" . $this->nbkiFileName;
+        $this->nbkiPath = __DIR__ . "/../../../" . NBKI_FILES_DIR . "/$this->nbkiFileName";
 
         $this->nbkiBlocks = $nbkiProcessor->getNBKIBlocks();
 
@@ -142,7 +142,7 @@ abstract class Registry
         }
 
         $this->nbkiFileName = $nbkiProcessor->getFilename();
-        $this->nbkiPath = NBKI_FILES_DIR . "\\" . $this->nbkiFileName;
+        $this->nbkiPath = __DIR__ . "/../../../" . NBKI_FILES_DIR . "/$this->nbkiFileName";
 
         $this->nbkiBlocks = $nbkiProcessor->getNBKIBlocks();
 

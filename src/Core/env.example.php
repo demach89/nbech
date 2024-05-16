@@ -1,7 +1,7 @@
 <?php
 
-const CSV_IMPORT_DIR = __DIR__ . "/../../csv_import";
-const NBKI_FILES_DIR = __DIR__ . "/../../nbki_files";
+const CSV_IMPORT_DIR = "csv_import";
+const NBKI_FILES_DIR = "nbki_files";
 
 const NBKI_CUSTOMER_CODE = "XXX";
 const NBKI_CUSTOMER_PWD  = "XXX";

@@ -20,8 +20,8 @@ class NBKICommentator
 
     public function __construct(string $nbkiFileName)
     {
-        $this->nbkiFilePath = NBKI_FILES_DIR . "/$nbkiFileName";
-        $this->nbkiCommentsFilePath = NBKI_FILES_DIR . "/$nbkiFileName" . '_comments' . '.txt';
+        $this->nbkiFilePath = __DIR__ . "/../../../" . NBKI_FILES_DIR . "/$nbkiFileName";
+        $this->nbkiCommentsFilePath = __DIR__ . "/../../../" . NBKI_FILES_DIR . "/{$nbkiFileName}_comments.txt";
     }
 
     public function load() : self

@@ -15,7 +15,7 @@ class CSVImportProvider
 
     public function __construct(string $CSVFileName, string $separator = ';')
     {
-        $this->CSVFilePath = CSV_IMPORT_DIR . "/$CSVFileName";
+        $this->CSVFilePath = __DIR__ . "/../../../" . CSV_IMPORT_DIR . "/$CSVFileName";
 
         $this->separator = $separator;
 
